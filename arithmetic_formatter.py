@@ -20,6 +20,7 @@ def arithmetic_arranger(problems, showAnswer=False):
         #makes sure the numbers are not longer than 5 digits
         if number1 > 9999 or number2 > 9999:
             return('Error: Numbers cannot be more than four digits.')
+        #calculates the correct answer and returns an error if a different operator than + or - was given
         if operator == '+':
             answer = number1 + number2
         elif operator =='-':
